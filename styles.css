@@ -1,0 +1,279 @@
+
+body {
+    justify-content: center;
+    background-color: #222831;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#Landing-Section {
+    background-color: #31363F;
+    height: calc(93vh);
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    margin-right: 15%;
+    margin-left: 15%;
+    border-radius: 20px;
+    margin-bottom: 2vh;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cabin {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    padding: 4vh;
+    padding-bottom: 2vh;
+    color: white;
+    font-variation-settings:
+        "wdth" 100;
+}
+.image-container {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30vh;
+    width: 30vh;
+    background-size: cover;
+    background-position: center top;
+    margin: 0;
+    padding: 0;
+  }.coverwholescreen {
+    position: absolute;
+    top: -24%;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    z-index: 4;
+    background: linear-gradient(to bottom, #76ABAE 0%, #76ABAE 5%, #222831 5%);
+    animation: slideUp 1s ease forwards;
+}
+#unveilscreen {
+    position: absolute;
+    top: -24%;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    z-index: 4;
+    background: linear-gradient(to top, #76ABAE 0%, #76ABAE 5%, #222831 5%);
+    animation: slideDown 1s ease-in-out forwards;
+}
+#fullscreenContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: black ;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+.vertical-center {
+    margin: 0;
+  
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+.image-container {
+    border-radius: 20px;
+    display: block;
+    height: 29.5vh;
+    width: 30vh;
+    margin: 1vh;
+    overflow: hidden;
+    transition: transform 0.5s; 
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.image:hover {
+    transform: scale(1.2);
+}
+.image-container:hover {
+    box-shadow: 0 0 20px #76ABAE; /* Adding blueish box shadow */
+    transform: scale(1.01);
+}
+
+
+button.dark {
+    --background: #2F3545;
+    --shadow: 0 2px 8px -1px rgba(21, 25, 36, .32);
+    --shadow-hover: 0 4px 20px -2px rgba(21, 25, 36, .5);
+}
+button.white {
+    --background: #fff;
+    --text: #275efe;
+    --shadow: 0 2px 8px -1px rgba(18, 22, 33, .04);
+    --shadow-hover: 0 4px 20px -2px rgba(18, 22, 33, .12);
+}
+button.fast {
+    --duration: .32s;
+}
+button {
+    --background: #275efe;
+    --text: #fff;
+    --font-size: 16px;
+    --duration: .44s;
+    --move-hover: -4px;
+    --shadow: 0 2px 8px -1px rgba(39, 94, 254, .32);
+    --shadow-hover: 0 4px 20px -2px rgba(39, 94, 254, .5);
+    --font-shadow: var(--font-size);
+    padding: 16px 32px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: var(--font-size);
+    border-radius: 24px;
+    display: block;
+    outline: none;
+    appearance: none;
+    border: none;
+    text-decoration: none;
+    font-size: var(--font-size);
+    letter-spacing: .5px;
+    background: var(--background);
+    color: var(--text);
+    box-shadow: var(--shadow);
+    transform: translateY(var(--y)) translateZ(0);
+    transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+}
+button div {
+    display: flex;
+    overflow: hidden;
+    text-shadow: 0 var(--font-shadow) 0 var(--text);
+}
+button div span {
+    display: block;
+    backface-visibility: hidden;
+    font-style: normal;
+    transition: transform var(--duration) ease;
+    transform: translateY(var(--m)) translateZ(0);
+}
+button:hover {
+    --y: var(--move-hover);
+    --shadow: var(--shadow-hover);
+}
+button:hover span {
+    --m: calc(var(--font-size) * -1);
+}
+button.reverse {
+    --font-shadow: calc(var(--font-size) * -1);
+}
+button.reverse:hover span {
+    --m: calc(var(--font-size));
+}
+.body .button-list {
+    display: flex;
+}
+.button-list button {
+    margin: 0 12px;
+}
+.dribbble {
+    position: fixed;
+    display: block;
+    right: 20px;
+    bottom: 20px;
+}
+.dribbble img {
+    display: block;
+    height: 28px;
+}
+button {
+    --background: #275efe;
+    --text: #fff;
+    --font-size: 16px;
+    --duration: .44s;
+    --move-hover: -4px;
+    --shadow: 0 2px 8px -1px rgba(39, 94, 254, .32);
+    --shadow-hover: 0 4px 20px -2px rgba(39, 94, 254, .5);
+    --font-shadow: var(--font-size);
+    padding: 16px 32px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    line-height: var(--font-size);
+    border-radius: 24px;
+    display: block;
+    outline: none;
+    appearance: none;
+    border: none;
+    text-decoration: none;
+    font-size: var(--font-size);
+    letter-spacing: .5px;
+    background: var(--background);
+    color: var(--text);
+    box-shadow: var(--shadow);
+    transform: translateY(var(--y)) translateZ(0);
+    transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+}
+button div {
+    display: flex;
+    overflow: hidden;
+    text-shadow: 0 var(--font-shadow) 0 var(--text);
+}
+button div span {
+    display: block;
+    backface-visibility: hidden;
+    font-style: normal;
+    transition: transform var(--duration) ease;
+    transform: translateY(var(--m)) translateZ(0);
+}
+button:hover {
+    --y: var(--move-hover);
+    --shadow: var(--shadow-hover);
+}
+button:hover span {
+    --m: calc(var(--font-size) * -1);
+}
+button.reverse {
+    --font-shadow: calc(var(--font-size) * -1);
+}
+button.reverse:hover span {
+    --m: calc(var(--font-size));
+}
+button div {
+    display: flex;
+    overflow: hidden;
+    text-shadow: 0 var(--font-shadow) 0 var(--text);
+}
+button div span {
+    display: block;
+    backface-visibility: hidden;
+    font-style: normal;
+    transition: transform var(--duration) ease;
+    transform: translateY(var(--m)) translateZ(0);
+}
+button:hover span {
+    --m: calc(var(--font-size) * -1);
+}
+button.reverse {
+    --font-shadow: calc(var(--font-size) * -1);
+}
+button.reverse:hover span {
+    --m: calc(var(--font-size));
+}

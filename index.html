@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Animal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ham.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="unveilscreen"></div>   
+    <audio id="Ham" src="ham.mp3" type="audio/mp3"></audio>
+    <audio id="wolfAudio" src="wolf.mp3" type="audio/mp3"></audio>
+    <div id="coverwholescreenUn"></div>
+    <div id="PlayHam" class="wheel-and-hamster" role="img" aria-label="Orange and tan hamster running in a metal wheel">
+        <div class="wheel"></div>
+        <div class="hamster">
+            <div class="hamster__body">
+                <div class="hamster__head">
+                    <div class="hamster__ear"></div>
+                    <div class="hamster__eye"></div>
+                    <div class="hamster__nose"></div>
+                </div>
+                <div class="hamster__limb hamster__limb--fr"></div>
+                <div class="hamster__limb hamster__limb--fl"></div>
+                <div class="hamster__limb hamster__limb--br"></div>
+                <div class="hamster__limb hamster__limb--bl"></div>
+                <div class="hamster__tail"></div>
+            </div>
+        </div>
+        <div class="spoke"></div>
+    </div>
+    <div id="Landing-Section" class="Cabin">
+        <h1 class="cabin" style="margin-bottom: 1vh;">Eu Gosto de lobos.</h1>
+        <div style="display: inline-block; justify-content: center;">
+            <center>
+                <div class="image-container playWolf">
+                    <div class="image" alt=""
+                         style="background-image: url(wolf1.jpg);">                         
+                    </div>
+                </div>
+                <div class="image-container playWolf" style="display: inline-block;">
+                    <div class="image" alt=""
+                         style="background-image: url(wolf2.jpg);">
+                    </div>
+                </div>                    
+            </center>
+        </div>
+        <div style="display: inline-block; justify-content: center;">
+            <center>
+                <div class="image-container playWolf" style="display: inline-block; height: 61vh; width: 30vh; margin: 1vh;">
+                    <img class="image" src="wolf.jpg" alt="" style="object-fit: cover;">
+                </div> 
+                
+            </center>
+        </div>
+        <div style="display: inline-block; justify-content: center;">
+            <center>
+                <div style="display: block;">
+                    <center>
+                        <div class="image-container playWolf" style="display: inline-block; height: 29vh; width: 30vh; margin: 0; margin-right: 1vw;">
+                            <div class="image" alt=""
+                                 style="background-image: url(wolf3.jpg);">
+                            </div>
+                        </div>  
+                        <div class="image-container playWolf" style="display: inline-block; height: 29vh; width: 30vh; margin: 0;">
+                            <div class="image" alt=""
+                                 style="background-image: url(wolf4.jpg);">
+                            </div>
+                        </div>
+                        
+                    </center>
+                </div>
+                <div class="image-container playWolf" style="display: block; height: 30vh; width: 62vh; margin-bottom: 1vh; margin-top: 1vh;">
+                    <div class="image" alt=""
+                         style="background-image: url(wolf6.jpg);">
+                    </div>
+                </div>
+                
+            </center>
+        </div>
+        
+            <center><button style="margin-top: 4vh;" id="openButton"><div> <span>Fun Facts</span></div></button></center>
+    </div>
+</body>
+
+</html>
