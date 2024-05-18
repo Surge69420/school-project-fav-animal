@@ -10,13 +10,12 @@ body {
 #Landing-Section {
     background-color: #31363F;
     height: calc(93vh);
-    width: 70%;
+    width: 80%;
     justify-content: center;
     text-align: center;
     margin-top: 2vh;
     margin-bottom: 5vh;
-    margin-right: 15%;
-    margin-left: 15%;
+ 
     border-radius: 20px;
     margin-bottom: 2vh;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
